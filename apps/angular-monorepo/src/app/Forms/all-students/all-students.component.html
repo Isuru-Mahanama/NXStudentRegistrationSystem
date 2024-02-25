@@ -1,0 +1,85 @@
+<div class="fullscreen-container" style="background-color: black;">
+<div class="bg-black p-4 ">
+  
+    <div class="py-3 mt-6 flex items-center  gap-x-6">
+        <h1 class="text-white py-4 items-center justify-start">Student Registration Details ______</h1>
+       
+    <button type="submit" class="buttonSave justify-end" (click)="NavigateToDahsboard()">GO TO DASHBOARD</button>
+</div>
+
+    <table class=" text-sm bg-black table-auto w-full border-collapse border border-slate-700 rounded-lg shadow-md">
+        <thead>
+            <tr class="text-left text-white bg-slate-900">
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Student ID</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">First Name</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Last Name</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Gender</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Academic Programme</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Birthday</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">phoneNumber</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">enrolled Date</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Modify</span>
+                    </div>
+                </th>
+                <th class="px-2 py-2">
+                    <div class="bg-white p-2 rounded">
+                        <span class="text-black">Delete</span>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of model" class="text-white border-b border-white hover:bg-white hcolor">
+                <td class="px-2 py-2">{{ item.studentID }}</td>
+                <td class="px-2 py-2">{{ item.firstName }}</td>
+                <td class="px-2 py-2">{{item.lastName }}</td>
+                <td class="px-2 py-2">{{ item.gender }}</td>
+                <td class="px-2 py-2">{{ item.academicProgramme }}</td>
+                <td class="px-2 py-2">{{ item.birthday.split('T')[0] }}</td>
+                <td class="px-2 py-2">{{ item.phoneNumber }}</td>
+                <td class="px-2 py-2">{{ item.enrolledDate.split('T')[0] }}</td>
+                <td class="px-2 py-2" (click)="NavigateToUpdate(item.studentID)">
+                    <img class="mx-auto" style="height: 20px; " src="/assets/updateIcon.png" alt="Your Company" >
+                </td>
+                <td class="px-2 py-2" (click)="NavigateToDelete(item.studentID)" >                    
+                    <img class="mx-auto" style="height: 20px; " src="/assets/deleteicon.png" alt="Your Company" >
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

@@ -14,7 +14,15 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-monorepo/admin-signup": ["libs/admin-signup/src/index.ts"],
+      "@angular-monorepo/dashboard": ["libs/dashboard/src/index.ts"],
+      "@angular-monorepo/login": ["libs/login/src/index.ts"],
+      "@angular-monorepo/navbar": ["libs/navbar/src/index.ts"],
+      "@angular-monorepo/navbarr": ["libs/navbarr/src/index.ts"],
+      "@angular-monorepo/user-dashboard": ["libs/user-dashboard/src/index.ts"],
+      "@angular-monorepo/user-navbar": ["libs/user-navbar/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

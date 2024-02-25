@@ -1,0 +1,67 @@
+
+
+.section-with-background {
+    background-image: url('/assets/universityatnight.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Additional styles for the container, if needed */
+    padding: 200px; /* Example padding */
+    color: white; /* Example text color */
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    padding-top: 3cm;
+    background: #000;
+  
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    color: white;
+    font-size: 40px;
+   
+}
+
+.left-column {
+    background-color: #000000;
+    margin-top: 4cm;
+    padding-left: 3cm;
+}
+
+.right-column {
+    background-color: #000000;
+    
+    
+}
+p{
+    flex: 1;
+    color: white;
+    font-size: smaller;
+    margin-left: 3cm;
+    text-align: justify;
+    margin-right: 3cm;
+    margin-bottom: 1.5cm;
+    
+}
+h1{
+    flex: 1;
+    color: white;
+    font-size: 40px; 
+}
+.about{
+    margin-left: 15cm;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+}
+.contact{
+    margin-left: 5cm;
+    margin-right: 5cm;
+}
+

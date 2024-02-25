@@ -1,0 +1,9 @@
+{
+  "name": "user-navbar",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/user-navbar/src",
+  "prefix": "angular-monorepo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
